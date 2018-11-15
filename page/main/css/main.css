@@ -1,0 +1,397 @@
+    /* 整体页面样式 */
+
+header,
+footer,
+section,
+aside,
+article,
+nav,
+hgroup,
+figure,
+figcaption,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+form,
+p,
+dl,
+dt,
+dd,
+blockquote,
+legend,
+table,
+th,
+td,
+fieldset,
+menu,
+pre {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  overflow: auto;
+  min-width: 960px;
+  color: #222222;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  font-size: 12px;
+  display: block;
+  min-width: 960px;
+}
+
+.TOP {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  min-width: 960px;
+  height: 86px;
+  /* background-color: red; */
+}
+
+.LEFT {
+  width: 201px;
+  position: absolute;
+  left: 0px;
+  top: 86px;
+  bottom: 0px;
+  z-index: 50;
+  /* 测试样式 */
+  /* background-color: skyblue; */
+}
+
+.RIGHT {
+  position: absolute;
+  left: 201px;
+  top: 86px;
+  right: 0;
+  bottom: 0;
+  z-index: 49;
+  /* 测试样式 */
+  /* background-color: gray; */
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+/* 标题栏部分样式 */
+
+/* 左侧列表部分样式 */
+
+.left_btn {
+  height: 38px;
+  position: relative;
+}
+
+.left_btn ul {
+  list-style: none;
+}
+
+#accept {
+  width: 101px;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+  display: inline-block;
+  height: 38px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 36px;
+  position: relative;
+  z-index: 1;
+  background-image: url(../images/left_btn_1_before.gif);
+  float: left;
+}
+
+#send {
+  width: 99px;
+  margin-left: 0;
+  /* background-position: -101px 0; */
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+  display: inline-block;
+  height: 38px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 36px;
+  position: relative;
+  z-index: 1;
+  background-image: url(../images/left_btn_2_before.gif);
+}
+
+.left_btn_span {
+  position: absolute;
+  top: 11px;
+  left: 24px;
+  height: 15px;
+  line-height: 0;
+}
+
+#left_btn_send{
+  top:10px;
+}
+
+.left_btn_icon {
+  height: 20px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#accept_icon {
+  background-image: url(../images/left_btn_1.png);
+}
+
+#send_icon {
+  background-image: url(../images/left_btn_2.png);
+}
+
+.left_btn_text {
+  position: relative;
+  top: 1px;
+  text-shadow: #fff 0 1px 0;
+  color: #3c6692;
+  margin-left: 46px;
+}
+
+.left_tree {
+  position: absolute;
+  top: 38px;
+  bottom: 0;
+  /* overflow: hidden; */
+  width: 201px;
+}
+
+.left_tree_ul {
+  position: relative;
+  /* overflow: hidden; */
+  padding-top: 8px;
+  padding-bottom: 56px;
+  list-style: none;
+}
+
+.left_tree_li {
+  outline: 0;
+  white-space: nowrap;
+  position: relative;
+  width: 201px;
+  clear: both;
+  font-size: 12px;
+}
+
+.left_tree_box {
+  outline: 0;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 26px;
+  margin-right: 1px;
+  white-space: nowrap;
+  position: static;
+  vertical-align: middle;
+}
+
+.box_inline_icon {
+  vertical-align: middle;
+  line-height: 0;
+  font-size: 0;
+  /* display: inline-block; */
+  height: 15px;
+}
+
+.box_inline_text {
+  position: relative;
+  z-index: 51;
+}
+
+.box_inline_text_s {
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+.inline_icon{
+  margin-top: -4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#icon_flag{
+  background: url(../images/icon_flag.png) no-repeat;
+  width: 11px;
+  height: 12px;
+  margin-right: 7px;
+}
+
+#icon_wait{
+  background: url(../images/icon_wait.png) no-repeat;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+#icon_tag{
+  background: url(../images/icon_tag.png) no-repeat;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+#icon_star{
+  background: url(../images/icon_star.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  margin-top: -2px !important;
+}
+
+#left_tree_li16{
+  outline: 0;
+  white-space: nowrap;
+  position: relative;
+  width: 201px;
+  height: 140px;
+}
+
+#left_tree_box16{
+  padding-top: 20px;
+  padding-left: 15px;
+  position: relative;
+  line-height: 0;
+  height: 120px;
+}
+
+#box16_adgg{
+  position: absolute;
+  left: 17px;
+  bottom: 2px;
+  border: 0;
+}
+
+#box16_ad{
+  display: inline-block;
+}
+
+#box16_adpic{
+  max-width: 160px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+#iframe_main{
+  width: 100%;
+  height: 870px;
+}
+
+
+.top_tab_outer{
+  height: 34px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+}
+
+.top_tab_inner{
+  line-height: 0;
+  font-size: 0;
+  height: 34px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 36px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.tablist{
+  left: 12px;
+  border-width: 0;
+  margin-bottom: 2px;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 1.666;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+}
+
+.tablist_li{
+  width: 91px;    
+  border-color: #0F6099;
+  color: #fff;
+  border-width: 1px 1px 0;
+  position: relative;
+  font-weight: 700;
+  background-repeat: repeat-x;
+  border-top-left-radius: 3px;
+  outline: 0;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+  height: 22px;
+  border-style: solid;
+  text-align: center;
+  line-height: normal;
+  font-size: 14px;
+  padding: 7px 20px 2px 8px;
+  margin: 0;
+  border-bottom-width: 0!important;
+  background-image: url(../images/59c64e8d8e5a5ff537116b8104fdd4eb592c7da7_03.png);
+}
+
+.tablist_text{
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  line-height: 16px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  margin-left: 6px;
+}
+
+.tablist_close{
+  outline: 0;
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  padding: 0;
+  height: 19px;
+  width: 19px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.close_icon{
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background: url(../images/close.png) no-repeat;
+}

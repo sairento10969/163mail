@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/login.css">
+	<title>Document</title>
+	<script src="./js/jquery-3.3.1.js">
+	</script>
+	<script src="./js/login.js"></script>
+</head>
+
+<body>
+	<div class="fullpage">
+		<!-- 页首部分 -->
+		<div class="login_top">
+			<div class="login_top_outer">
+				<!-- 页首左侧 -->
+				<div class="login_top_inner_pic">
+					<a href="http://www.baidu.comm" class="login_top_a1" title="xxxxxx"></a>
+				</div>
+				<div class="login_top_inner_title">
+					<a href="http://www.baidu.comm" class="login_top_a" title="xxxhhh"></a>
+				</div>
+				<!-- 页首右侧 -->
+				<div class="login_top_inner_lis">
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<a href="" class="login_top_a">帮助</a>
+					<a href="" class="login_top_a">测试文字</a>
+					<span>&nbsp;|&nbsp;</span>
+					<a href="" class="login_top_b">客服助理</a>
+				</div>
+			</div>
+		</div>
+		<!-- 页首部分结束 -->
+		<!-- 主体部分 -->
+		<div class="login_mid">
+			<div class="login_mid_pic">
+				<img src="./images/promPic1.jpg" id="adpic">
+				<!-- 图片轮播部分 -->
+				<div class="login_mid_theme">
+					<a href="http://www.baidu.com" class="login_mid_theme_a">
+					</a>
+				</div>
+				<!-- 图片切换部分 -->
+				<div class="login_mid_themeCtrl">
+					<span class="login_mid_themeCtrl_left">111</span>
+					<span class="login_mid_themeCtrl_right">222</span>
+				</div>
+				<!-- 登录框 -->
+				<div class="login_mid_block">
+					<div class="zhezhao">
+					<div class="login_mid_block_check">
+						<div class="loginAPP">二维码登录</div>
+						<div class="loginNORMAL">邮箱账户登录</div>
+					</div>
+					<!-- 二维码登录部分 -->
+					<div class="login_mid_block_APPlog login_mid_block_log" id="APPlog">
+						<div class="APPlog_outer">
+							<div class="APPlog_inner">
+								<h3>
+									<strong>测试测试测试</strong>手机版扫码登录</h3>
+								<p class="APPlog_inner_text">
+									官方APP更安全
+									<span class="APPlog_inner_text_span">
+										<a href="" id="download" style="color: #4ea9f6">立即下载</a>
+									</span>
+								</p>
+								<div class="APPlog_inner_Warp">
+									<div class="Warp_example"></div>
+									<div class="Warp_code">
+										<img src="./images/getUrlQrcode.jpg" id="APPcode">
+										<img src="./images/loading_s.gif" id="CodeLoading">
+									</div>
+								</div>
+							</div>
+							<div class="APPlog_bottom">
+								<span class="APPlog_bottom_left"></span>
+								<div class="APPlog_bottom_right">
+									<p>
+										<strong>XXXXXXX电脑端</strong>
+									</p>
+									<p>XXXXXXXXXXXX</p>
+									<a href="" style="color:#4ea9f6;">立即下载>></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 普通登录部分 -->
+					<div class="login_mid_block_Normallog login_mid_block_log" id="Normallog">
+						<div class="Normallog_top">
+							<div class="Normallog_top_login">
+								<form action="" method="get">
+									<div class="login_UserName login_input">
+										<div class="login_UserName_left" id="text_left">
+											<div class="login_UserName_left_pic">
+											</div>
+										</div>
+										<div class="login_UserName_main" id="text_input">
+											<input type="text" name="UserName" id="UserName" placeholder="邮箱账号或手机号" style="widows:122px;">
+											<span class="webmail">@xxx.com</span>
+										</div>
+									</div>
+									<div class="login_PassWord login_input">
+										<div class="login_PassWord_left" id="text_left">
+											<div class="login_PassWord_left_pic">
+											</div>
+										</div>
+										<div class="login_PassWord_main" id="text_input" style="width: 205px;">
+											<input type="password" name="PassWord" id="PassWord" placeholder="密码">
+										</div>
+									</div>
+									<div class="login_unlog">
+										<div class="login_unlog_Remember">
+											<span class="login_unlog_Remember_check">
+												<input type="checkbox" name="Remember" id="Remember">
+											</span>
+											<label for="Remember" class="Remember_text">10天内免登陆</label>
+										</div>
+										<a href="" id="forget">忘记密码？</a>
+									</div>
+									<div class="LogInbox">
+										<a href="" class="LogInbox_outer">
+											<div class="LogInbox_text">登&nbsp;&nbsp;录</div>
+										</a>
+									</div>
+									<div class="Registerbox">
+										<a href="" class="Regsiterbox_outer">
+											<div class="Registerbox_text">去注册</div>
+										</a>
+									</div>
+								</form>
+							</div>
+							<div class="Normallog_top_From">
+								<div class="FromVer">
+									<span>版本:</span>
+									<span class="change">
+										<span class="Ver_span">默认版本</span>
+										<b class="arr_down"></b>
+									</span>
+								</div>
+								<div class="FromService">
+									<input type="checkbox" name="SSL" id="SSL" checked="checked">
+									<label for="SSL" class="SSL_text">全程SSL</label>
+								</div>
+								<div class="FromSelect">
+									<ul>
+										<li id="li1" class="FromSelect_li1">默认版本</li>
+										<li id="li2" class="FromSelect_li2">测试文字6.0</li>
+										<li id="li3" class="FromSelect_li3">测试文字6.0稳定版</li>
+									</ul>
+								</div>
+							</div>
+							<div class="mailAPP">
+								<a href="" class="mailAPP_pic"></a>
+							</div>
+						</div>
+						<div class="Normallog_bottom">
+							<ul id="bottomText">
+								<li id="Text1">
+									<a href="" style="color: #9bacc6">你有一个120元礼包待领取！购>></a>
+								</li>
+								<li id="Text2">
+									<a href="">
+										<span style="color: #cb4444">严选世界杯:2元免费开走奔驰车！</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<img src="./images/ico_gg.png" id="adtag">
+		</div>
+		<!-- 主体部分结束 -->
+		<!-- 页尾部分 -->
+		<div class="login_under">
+			<div class="login_under_inner">
+				<a href="" class="login_under_logo">
+					<span class="login_under_logo_span"></span>
+				</a>
+				<div class="login_under_text">
+					<a href="" id="login_under_text1">测试文字</a>
+					<a href="" id="login_under_text2">测试文字</a>
+					<a href="" id="login_under_text3">测试文字测试文字</a>
+					<a href="" id="login_under_text4">测试文字</a>
+					<a href="" id="login_under_text5">测试文字测试文字</a>
+					<a href="" id="login_under_text6">测试文字</a>
+					<a href="" id="login_under_text7">测试文字</a>
+					<span>|</span>
+					<span class="copyright">网易公司版权所有©1997-2018</span>
+				</div>
+				<div class="certification">
+					<a href="" class="icp">ICP证粤B2-20090191</a>
+					<span style="color: #ccc;">（数据来源：艾媒邮箱报告）</span>
+				</div>
+			</div>
+		</div>
+		<!-- 页尾部分结束 -->
+		<div class="list_outer"></div>
+	</div>
+</body>
+
+</html>

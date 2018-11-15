@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/mail.css">
+  <link rel="stylesheet" href="../css/currency.css">
+  <script src="../../js/jquery-3.3.1.js"></script>
+  <script src="./js/mail.js"></script>
+</head>
+<body>
+  <header class="currency_header">
+    <div class="tool_outer">
+      <div class="tool_inner" id="tool_inner1">
+        <div class="tool_btn" id="tool_btn1">
+          <div class="tool_btn">
+            <span class="tool_btn_text">返&nbsp;&nbsp;&nbsp;&nbsp;回</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text">删 除</span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text">举 报</span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text2">标记为</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text3">移动到</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text4">更多</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text">刷 新</span>
+        </div>
+      </div>
+      <div class="tool_inner_last">
+        <div class="tool_last_item">
+          <div class="tool_last_calendar">
+            <b class="calendar_icon"></b>
+          </div>
+        </div>
+        <div class="tool_last_item">
+
+        </div>
+        <div class="tool_last_item">
+
+        </div>
+        <div class="tool_last_item">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="main_body">
+      <div class="mailmain_header">
+        <div class="header_title">
+          <h1 class="title_text">
+            111
+          </h1>
+        </div>
+        <div class="title_bottom">
+          <ul id="ulabstract" style="display: none">
+            <li class="title_li" id="title_abstract">
+              <div class="abstract_text">
+                <strong id="abstract_name">
+                  <span class="mail_send_name">测试用户11</span>
+                </strong>
+                <span>&nbsp;&nbsp;发送给&nbsp;&nbsp;</span>
+                <span class="mail_receive_name">测试用户22</span>
+              </div>
+            </li>
+          </ul>
+          <ul id="ulall">
+            <li id="title_from" class="title_li">
+              <div class="title_li_left">发件人:</div>
+              <div class="title_li_right">
+                  <div class="li_rightbox">
+                <span class="rightbox_name mail_send_name">测试用户11</span>
+                <span class="rightbox_email">11111111111@xx.com</span>
+                </div>
+              </div>
+            </li>
+            <li id="title_send" class="title_li">
+              <div class="title_li_left">收件人:</div>
+              <div class="title_li_right">
+                <div class="li_rightbox">
+                  <span class="rightbox_name mail_receive_name">测试用户22</span>
+                  <span class="rightbox_email">2222222222@xx.com</span>
+
+                </div>
+              </div>
+            </li>
+            <li id="title_date" class="title_li">
+              <div class="title_li_left">时&nbsp;&nbsp;&nbsp;间:</div>
+              <div class="title_li_time">
+                  xxxx年xx月xx日&nbsp;&nbsp;&nbsp;xx:xx&nbsp;空格&nbsp; (星期X)
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="title_right">
+          <b id="glass_icon"></b>
+          <a href="javascript:viod(0)" id="glass_text">优化阅读</a>
+          <span style="color: #E5E5E5;">&nbsp;|&nbsp;</span>
+          <a href="javascript:viod(0)" class="title_cut" id="hide">精简信息
+            <b class="cut_icon">k</b>
+          </a>
+          <a href="javascript:viod(0)" class="title_cut hide" id="show">完整信息
+            <b class="cut_icon">j</b>
+          </a>
+        </div>
+      </div>
+      <div class="mailmain_ad1">
+        <div class="ad1_box">
+          <span id="ad1_close">
+            <b class="close_icon"></b>
+          </span>
+          <div class="ad1_text">
+            测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+          </div>
+        </div>
+      </div>
+      <div class="mailmain_text">
+        <div class="text_box">
+          <iframe src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <div class="mailmain_re">
+        <div class="re_outer">
+            <div class="re_inner">
+              <div class="re_box">
+                <textarea name="re" id="re"></textarea>
+              </div>
+              <div class="re_btn" style="display:none">
+                <div class="send_box">
+                  <span class="send_btn">&nbsp;&nbsp;发&nbsp;送&nbsp;&nbsp;</span>
+                </div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="remove_box">
+                  <span class="remove_btn">&nbsp;&nbsp;取&nbsp;消&nbsp;&nbsp;</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

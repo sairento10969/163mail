@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/accept.css">
+  <link rel="stylesheet" href="../css/currency.css">
+  <script src="../../js/jquery-3.3.1.js"></script>
+  <script src="../js/currency.js"></script>
+  <script src="./js/accept.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="currency_header">
+    <div class="tool_outer">
+      <div class="tool_inner" id="tool_inner1">
+        <div class="tool_btn" id="tool_btn1">
+          <span class="tool_btn_icon">
+            <span class="area_check tool_btn_check ">
+              <!-- JS勾选选择类 -->
+              <span class="tool_btn_chk_symbol checkbox_span">
+                <input type="checkbox" name="check_icon" id="top_check">
+                <!-- <b class="check_icon"></b> -->
+              </span>
+            </span>
+          </span>
+          <span class="tool_btn_text" id="tool_btn_text1"></span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn" id="delete">
+          <span class="tool_btn_text">删 除</span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text">反 选</span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text2">标记为</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text3">移动到</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+        <div class="tool_btn">
+          <span class="tool_btn_text" id="tool_btn_text4">更多</span>
+          <span class="tool_btn_arr" tabindex="0">
+            <b class="arr_icon"></b>
+          </span>
+        </div>
+      </div>
+      <div class="tool_inner">
+        <div class="tool_btn">
+          <span class="tool_btn_text">刷 新</span>
+        </div>
+      </div>
+      <div class="tool_inner_last">
+        <div class="tool_last_item">
+          <div class="tool_last_calendar">
+            <b class="calendar_icon"></b>
+          </div>
+        </div>
+        <div class="tool_last_item">
+
+        </div>
+        <div class="tool_last_item">
+
+        </div>
+        <div class="tool_last_item">
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="main_body">
+      <div class="main_ad_outer">
+        <div class="main_ad_inner">
+          <span class="main_ad_text">
+            [
+            <a href="">网易严选</a>
+            ]&nbsp;[广告]
+          </span>
+          <a href="" class="main_ad_link">【世界杯】不容错过的世界杯万能CP——啤酒&小龙虾，赶快pick吧！ 马上购>></a>
+          <div class="main_ad_btn1">
+            <div class="main_ad_btn2">
+              <b class="close_icon"></b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_title_outer">
+        <div class="main_title_inner">
+          <span class="main_title_text">
+            <a href="" class="main_title_a">测试文字测试文字</a>
+            <a href="" class="main_title_a">测试文字测试文字</a>
+          </span>
+        </div>
+      </div>
+      <div class="space"></div>
+      <table class="main_mail">
+        <tr class="mailtr" id="mail1">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from1">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title1">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date1">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail2">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from2">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title2">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date2">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail3">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon" checked>
+              </span>
+            </div>
+            <div class="from" id="from3">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title3">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date3">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail4">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from4">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title4">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date4">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail5">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from5">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title5">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date5">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail6">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from6">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title6">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date6">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail7">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from7">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title7">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date7">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail8">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from8">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title8">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date8">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail9">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from9">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title9">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date9">
+            </div>
+          </td>
+        </tr>
+        <tr class="mailtr" id="mail10">
+          <td class="mail_start">
+            <div class="start_lable">
+              <span class="check_btn checkbox_span">
+                <!-- 被选框 -->
+                <input type="checkbox" name="check_icon" class="check_icon">
+              </span>
+            </div>
+            <div class="from" id="from10">
+            </div>
+            <div class="start_flag">
+              <b class="icon_flag"></b>
+            </div>
+          </td>
+          <td class="mail_mid">
+            <div class="title" id="title10">
+            </div>
+          </td>
+          <td class="mail_date">
+            <div class="date" id="date10">
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="page_outer">
+        <div class="page_inner">
+          <span class="page_replace" id="page_left">
+            <a href="javascript:void(0)" class="page_check_num" id="checkleft">上一页</a>
+          </span>
+          <span class="page_replace" id="page_check">
+            <a href="javascript:void(0)" class="page_check_num" id="check1">1</a>
+            <a href="javascript:void(0)" class="page_check_num" id="check2">2</a>
+            <a href="javascript:void(0)" class="page_check_num" id="check3">3</a>
+            <a href="javascript:void(0)" class="page_check_num" id="check4">4</a>
+          </span>
+          <span class="page_replace" id="page_right">
+            <a href="javascript:void(0)" class="page_check_num" id="checkright">下一页</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

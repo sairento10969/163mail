@@ -1,0 +1,264 @@
+
+
+/* 收件箱主体部分 */
+
+
+.main_ad_outer {
+  height: auto;
+  max-height: 50px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  display: block;
+}
+
+.main_ad_inner {
+  background-color: #f7f7f7;
+  padding: 0 25px 0 12px;
+  overflow: hidden;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #f1f1f1;
+  font-size: 12px;
+  position: relative;
+  color: #999;
+}
+
+.main_ad_text {
+  float: right;
+  line-height: 48px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.main_ad_text a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main_ad_link {
+  vertical-align: middle;
+  font-size: 16px;
+  color: #cc0000;
+  text-decoration: none;
+}
+
+.main_ad_btn1 {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 25px;
+  height: 22px;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.main_ad_btn2 {
+  color: #bfbfbf;
+  margin-left: 1px;
+  float: left;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.main_title_outer {
+  border-color: #d5d6d7;
+  margin-top: 6px;
+  padding-left: 12px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.main_title_inner {
+  padding-right: 120px;
+  line-height: 20px;
+  position: relative;
+}
+
+.main_title_a {
+  margin-left: -4px;
+  margin-right: 4px;
+  font-size: 12px;
+  outline: 0;
+  cursor: pointer;
+  padding: 2px 4px 4px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.space {
+  border-bottom: 1px solid #a3bdd0;
+  font-size: 0;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 6px;
+  zoom: 1;
+}
+
+.main_mail {
+  border-color: #d5d6d7;
+  position: relative;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.mailtr {
+  overflow: hidden;
+  overflow-x: hidden;
+  border-bottom: 1px solid #e0e0e0;
+  clear: both;
+  width: 100%;
+  height: 36px;
+  vertical-align: baseline;
+  line-height: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mailtr td {
+  vertical-align: middle;
+  position: relative;
+}
+
+.mail_start {
+  width: 264px;
+}
+
+.mail_mid {
+  width: 1244px;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mail_date {
+  width: 183px;
+  /* overflow: hidden; */
+}
+
+.start_lable {
+  display: block;
+  position: absolute;
+  width: 25px;
+  left: 8px;
+  top: 0;
+  height: 36px;
+}
+
+.check_btn {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  margin-top: 0;
+  float: left;
+  margin-right: 5px;
+}
+
+
+
+.from {
+  width: 134px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 72px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.from_text {
+  height: 1.1em;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.start_flag {
+  position: absolute;
+  left: 234px;
+  padding-top: 5px;
+  height: 24px;
+  cursor: pointer;
+  top: 4px;
+}
+
+.icon_flag {
+  width: 11px;
+  height: 12px;
+  background: url(../images/flag_before.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  /* top: 0;
+  left: 264px;
+  right: 183px; */
+  height: 1.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title_text {
+  position: relative;
+  margin-right: 4px;
+  vertical-align: baseline;
+}
+
+.date {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background-color: #fff;
+  height: 1.1em;
+  width: 183px;
+}
+
+.date_text {
+  text-align: right;
+  padding-right: 2px;
+  color: #bbb;
+  width: 102px;
+  float: right;
+  font-size: 12px;
+}
+
+.page_outer {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  /* background-color: skyblue; */
+  height: 50px;
+}
+
+.page_replace {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.page_check_num {
+  margin-right: 2px;
+}
+
+.page_replace a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.hidden {
+  opacity: 0;
+}

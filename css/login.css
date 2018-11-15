@@ -1,0 +1,779 @@
+/* 全局设置 */
+
+body {
+  color: #000;
+  background: #fff;
+  font-size: 12px;
+  line-height: 166.6%;
+  text-align: center;
+}
+
+body,
+h1,
+h2,
+h3,
+img,
+li,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body,
+button,
+input,
+select {
+  font-family: Microsoft YaHei, verdana, Simsun, STXihei;
+}
+
+button,
+h1,
+h2,
+h3,
+input,
+select {
+  font-size: 100%;
+}
+
+.fullpage {
+  width: 100%;
+  padding-top: 121.5px;
+  /* background-color: #666666;*/
+  /*测试用背景颜色*/
+  min-width: 1000px;
+  overflow: hidden;
+}
+
+a {
+  color: #848585;
+  text-decoration: none;
+}
+
+/* 页首部分设置 */
+
+.login_top {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.login_top_outer {
+  position: relative;
+  margin: 0 auto;
+  /* background-color: green; */
+  /*测试用背景颜色*/
+  min-height: 100%;
+  width: 1000px;
+}
+
+.login_top_inner_pic {
+  position: absolute;
+  top: 17px;
+  left: 50px;
+}
+
+.login_top_a1 {
+  display: inline-block;
+  width: 136px;
+  height: 32px;
+  background: url(../images/163logo.gif) 50% no-repeat;
+  background-size: 100% 100%;
+}
+
+.login_top_inner_title {
+  width: 144px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 194px;
+  border-left: 1px solid black;
+  cursor: pointer;
+  background: url(../images/163囖go.png) 50% no-repeat;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+}
+
+.login_top_inner_lis {
+  position: absolute;
+  top: 21px;
+  right: 100px;
+  text-align: right;
+  color: #cfd0d0;
+  cursor: pointer;
+}
+
+.login_top_a {
+  padding-left: 13px;
+  display: inline-block;
+}
+
+.login_top_b {
+  padding-left: 0px;
+  display: inline-block;
+}
+
+/* 主体部分 */
+
+.login_mid {
+  height: 600px;
+  background-color: rgb(247, 245, 246);
+  position: relative;
+}
+
+.login_mid_pic {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  clear: both;
+  /* background: url(./images/promPic1.jpg) no-repeat; */
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+}
+
+.login_mid_theme {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #fff; 测试用背景颜色 */
+}
+
+.login_mid_theme_a {
+  width: 605px;
+  height: 600px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+  /* background-color: rgb(111, 112, 17); 测试用背景颜色 */
+}
+
+.login_mid_themeCtrl {
+  position: absolute;
+  right: 50%;
+  bottom: 12px;
+  margin-right: -405px;
+  text-align: right;
+}
+
+.login_mid_themeCtrl_left,
+.login_mid_themeCtrl_right {
+  cursor: pointer;
+}
+
+#adtag {
+  position: absolute;
+  left: 130px;
+  bottom: 4px;
+  border: 0px;
+  margin: 0;
+  line-height: normal;
+  width: 22px;
+  height: 14px;
+}
+
+.login_mid_block {
+  width: 295px;
+  height: 460px;
+  padding: 13px 14px 15px;
+  top: 56px;
+  left: 50%;
+  margin-left: 90px;
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  background: url(../images/login_left.png) no-repeat;
+  background-position: 13px 14px;
+  /* box-shadow: 0 0 6px 2px rgb(116, 119, 119); */
+}
+
+.login_mid_block_check {
+  width: 100%;
+  height: 47px;
+  overflow: hidden;
+  clear: both;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loginAPP {
+  padding-left: 15px;
+  width: 132px;
+  height: 100%;
+  float: left;
+  line-height: 46px;
+}
+
+.loginNORMAL {
+  width: 148px;
+  height: 100%;
+  position: relative;
+  float: left;
+  color: #626262;
+  line-height: 46px;
+}
+
+.login_mid_block_APPlog {
+  text-align: center;
+  font-size: 16px;
+  color: #626262;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.login_mid_block_Normallog {
+  display: none;
+}
+
+/* 设置两部分隐藏 */
+
+/* #APPlog {
+  display: block;
+}
+
+#Normallog {
+  display: none;
+} */
+
+.login_mid_block_log {
+  padding: 0px;
+  height: 413px;
+  position: relative;
+}
+
+.APPlog_inner {
+  padding-top: 6px;
+  padding-bottom: 12px;
+}
+
+.APPlog_inner h3 {
+  padding-top: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 16px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.APPlog_inner_text {
+  font-size: 14px;
+  margin: 14px;
+}
+
+.APPlog_inner_Warp {
+  margin-top: 30px;
+  height: 150px;
+  position: relative;
+}
+
+.Warp_example {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  width: 140px;
+  height: 175px;
+  background: url(../images/applogin_example.png) no-repeat;
+  display: none;
+}
+
+.Warp_code {
+  position: relative;
+  left: 0px;
+  width: 100%;
+}
+
+#APPcode {
+  padding: 2px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 3);
+  width: 130px;
+  height: 130px;
+}
+
+#CodeLoading {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+  margin: 0px;
+  line-height: normal;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.APPlog_bottom {
+  width: 231px;
+  margin: 20px auto;
+}
+
+.APPlog_bottom_left {
+  display: inline-block;
+  width: 88px;
+  height: 67px;
+  background: url(../images/下载.png) 50% no-repeat;
+  float: left;
+}
+
+.APPlog_bottom_right {
+  font-size: 14px;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 11px;
+}
+
+.APPlog_bottom_right a {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.Normallog_top {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  outline: none;
+}
+
+/* 输入框placeholder设置 */
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cfd0d0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cfd0d0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cfd0d0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cfd0d0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.login_input {
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  margin-left: 25px;
+  width: 245px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #848585;
+  border-radius: 5px;
+}
+
+#text_left {
+  width: auto;
+  padding: 0 7px 0 9px;
+  float: left;
+}
+
+.login_UserName_left_pic {
+  background: url(../images/user.png) no-repeat;
+  width: 14px;
+  height: 16px;
+  margin-top: 13px;
+}
+
+.login_PassWord_left_pic {
+  background: url(../images/password.png) no-repeat;
+  width: 14px;
+  height: 16px;
+  margin-top: 13px;
+}
+
+#text_input {
+  width: 135px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 0;
+  position: relative;
+  float: left;
+}
+
+.login_UserName_main #UserName {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 0;
+  background: 0;
+  border: 0;
+  color: #333;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1px 0;
+}
+
+.webmail {
+  position: absolute;
+  top: 5px;
+  right: -72px;
+  height: 33px;
+  font-size: 14px;
+  line-height: 33px;
+  overflow: hidden;
+  color: #616161;
+  display: block;
+  background-color: #fff;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.outline {
+  box-shadow: 0 0 5px rgba(2, 145, 252, 0.5);
+}
+
+.login_PassWord {
+  position: absolute;
+  top: 102px;
+}
+
+.login_PassWord_main #PassWord {
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 0;
+  background: 0;
+  border: 0;
+  color: #333;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login_unlog {
+  position: absolute;
+  top: 162px;
+  right: 22px;
+  padding: 0;
+  width: 250px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.login_unlog_Remember {
+  position: relative;
+  width: 104px;
+  float: left;
+  line-height: 16px;
+  height: 17px;
+}
+
+.login_unlog_Remember_check {
+  margin: 4px 0 0 4px;
+  width: 13px;
+  height: 13px;
+  border: 0;
+  float: left;
+  color: #999;
+  font-size: 12px;
+}
+
+#Remember {
+  -webkit-appearance: none;
+  outline: none;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  margin: 0;
+  background: url(../images/checkbox_1.png) no-repeat;
+}
+
+#Remember:checked {
+  background: url(../images/checkbox_2.png) no-repeat;
+}
+
+.Remember_text {
+  color: #848585;
+  padding: 1px 0 0 3px;
+  height: 16px;
+  line-height: 17px;
+  cursor: pointer;
+  float: left;
+}
+
+#forget {
+  padding-left: 84px;
+  padding-top: 4px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #848585;
+  float: left;
+}
+
+.LogInbox {
+  position: absolute;
+  top: 180px;
+  right: 160px;
+  width: 110px;
+  height: 38px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.LogInbox_text {
+  height: 38px;
+  width: 110px;
+  line-height: 38px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background: url(../images/loginbox.png) no-repeat;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 28, 88, 0.3);
+  text-align: center;
+}
+
+.Registerbox {
+  position: absolute;
+  top: 180px;
+  right: 30px;
+  width: 110px;
+  height: 38px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.Registerbox_text {
+  height: 38px;
+  width: 110px;
+  line-height: 38px;
+  color: #6d798c;
+  font-size: 14px;
+  font-weight: 700;
+  background: url(../images/register.png) no-repeat;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 28, 88, 0.3);
+  text-align: center;
+}
+
+.Normallog_top_From {
+  position: absolute;
+  top: 252px;
+  right: 25px;
+  margin: 0;
+  width: 245px;
+  height: 14px;
+  line-height: 14px;
+  color: #848585;
+  text-align: left;
+}
+
+.FromVer {
+  float: left;
+  width: 160px;
+  line-height: 14px;
+  height: 14px;
+}
+
+.change {
+  cursor: pointer;
+}
+
+.arr_down {
+  width: 7px;
+  height: 12px;
+  vertical-align: baseline;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../images/arr-down-1.png) no-repeat;
+}
+
+.FromService {
+  float: right;
+  display: block;
+  text-align: right;
+  height: 14px;
+}
+
+#SSL {
+  -webkit-appearance: none;
+  outline: none;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  margin: 0;
+  background: url(../images/checkbox_1.png) no-repeat;
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.SSL_text {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#SSL:checked {
+  background: url(../images/checkbox_2.png);
+}
+
+.FromSelect {
+  width: 140px;
+  position: absolute;
+  top: -5px;
+  left: 33px;
+  padding: 1px;
+  background: #fff;
+  border: 1px solid #b7c2c9;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+  display: none;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.FromSelect ul {
+  list-style: none;
+}
+
+.FromSelect ul li {
+  height: 22px;
+  line-height: 22px;
+  width: 140px;
+  overflow: hidden;
+  text-indent: 22px;
+}
+
+.mailAPP {
+  position: absolute;
+  top: 296px;
+  right: 19px;
+  margin: 0;
+  height: 35px;
+  width: 256px;
+}
+
+.mailAPP_pic {
+  background: url(../images/mailAPP.png) no-repeat;
+  background-size: 100% 100%;
+  height: 35px;
+  width: 256px;
+  display: block;
+}
+
+.Normallog_bottom {
+  height: 38px;
+  overflow: hidden;
+  position: absolute;
+  top: 361px;
+  right: 0px;
+  width: 245px;
+  padding: 0 25px;
+  /* background-color: aqua; */
+}
+
+#bottomText {
+  line-height: 20px;
+  list-style: none;
+}
+
+#bottomText li {
+  padding-left: 7px;
+  background-position: -240px -118px;
+  background-repeat: no-repeat;
+}
+
+/* 页尾部分 */
+
+.login_under {
+  height: 65px;
+  margin: 0 auto;
+}
+
+.login_under_inner {
+  width: 1000px;
+  height: 63px;
+  overflow: visible;
+  margin: 0 auto;
+  color: #848585;
+  position: relative;
+}
+
+.login_under_logo {
+  position: absolute;
+  top: 24px;
+  left: 35px;
+}
+
+.login_under_logo_span {
+  display: inline-block;
+  width: 122px;
+  height: 44px;
+  background: url(../images/netease_logo.gif) 50% no-repeat;
+  background-size: 100% 100%;
+}
+
+.login_under_text {
+  position: absolute;
+  top: 25px;
+  right: auto;
+  left: 220px;
+}
+
+.login_under_text a {
+  margin-left: 12px;
+}
+
+.login_under_text #login_under_text7 {
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-left: 12px;
+}
+
+.certification {
+  position: absolute;
+  top: 47px;
+  right: auto;
+  left: 220px;
+  color: #959595;
+}
+
+.icp {
+  margin-left: 12px;
+}
+
+/* CSS动画部分 */
+
+.list_row {
+  width: 1080px;
+  text-align: left;
+  color: red;
+}
+
+.zhezhao{
+  width: 295px;
+  height: 460px;
+  box-shadow: 0px 0px 17px 1px rgb(116, 119, 119);
+}
